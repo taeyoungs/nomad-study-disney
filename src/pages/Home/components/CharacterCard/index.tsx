@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Text } from 'components';
+import { Text, Image } from 'components';
 
 import { color } from 'constants/common';
 import { Character } from 'types/character';
@@ -29,24 +29,6 @@ const Figure = styled.figure`
   padding: 6px 0;
 `;
 
-const Image = styled.img`
-  border-radius: 100px;
-  width: 120px;
-  height: 120px;
-  margin: 0 0 8px;
-`;
-
-const ImageFallback = styled.div`
-  border-radius: 100px;
-  width: 120px;
-  height: 120px;
-  background-color: ${color.skeleton};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 8px;
-`;
-
 interface CharacterCardProps {
   character: Character;
 }
@@ -57,13 +39,7 @@ function CharacterCard({ character }: CharacterCardProps) {
   return (
     <Card to={`/character/${id}`}>
       <Figure>
-        {imageUrl ? (
-          <Image src={imageUrl} alt={name} width={120} height={120} loading="lazy" />
-        ) : (
-          <ImageFallback>
-            <Text as="div">No image</Text>
-          </ImageFallback>
-        )}
+        <Image image={imageUrl} alt={name} width={120} height={120} radius={100} loading="lazy" />
         <Text as="figcaption">{name}</Text>
       </Figure>
     </Card>
