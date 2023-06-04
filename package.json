@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@suspensive/react": "^1.11.1",
+    "@suspensive/react-query": "^1.11.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "styled-components": "^5.3.11",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
@@ -25,5 +30,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
-  "packageManager": "yarn@3.6.0"
+  "packageManager": "yarn@3.6.0",
+  "resolutions": {
+    "styled-components": "^5"
+  }
 }
