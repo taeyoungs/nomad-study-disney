@@ -469,6 +469,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lukemorales/query-key-factory@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@lukemorales/query-key-factory@npm:1.2.0"
+  peerDependencies:
+    "@tanstack/query-core": ^4.0.0
+  checksum: a7f6b0b75da516e3c715f09424cb2ec67902b63a619dff3506e495fcd917b8ccf5457e7fbb5f3de4aba1f35ed30687abf9dfa836d6abbea943c6ebecf4d342b8
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2642,6 +2651,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nomad-study-disney@workspace:."
   dependencies:
+    "@lukemorales/query-key-factory": ^1.2.0
     "@suspensive/react": ^1.11.1
     "@suspensive/react-query": ^1.11.1
     "@tanstack/react-query": ^4.29.12
