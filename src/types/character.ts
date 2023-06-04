@@ -3,7 +3,7 @@ import z from 'zod';
 export const CharacterSchema = z.object({
   id: z.number(),
   name: z.string(),
-  imageUrl: z.string(),
+  imageUrl: z.string().optional(),
 });
 export type Character = z.infer<typeof CharacterSchema>;
 
