@@ -123,6 +123,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: #212529;
 }
 ol,
 ul {
